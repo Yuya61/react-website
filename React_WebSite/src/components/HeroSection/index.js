@@ -26,14 +26,8 @@ const HeroSection = () => {
         {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
       </HeroBg>
       <HeroContent>
-        <HeroH1>
-          I am Yuya Hashirizaki. I design & build digital products based in
-          Vancouver.
-        </HeroH1>
-        <HeroP>
-          I’m a passionate multi-talented human who comes from Japan with over
-          6+ years of experiences in wider field of design disciplines.
-        </HeroP>
+        <HeroH1>React Website Servece</HeroH1>
+        <HeroP>Flexible Dynamic API in less to spend starting at $10</HeroP>
         <HeroBtnWrapper>
           <Button
             to="signup"
