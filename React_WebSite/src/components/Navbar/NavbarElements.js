@@ -1,9 +1,10 @@
-import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
+import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
+  background: ${({ scrollNav }) =>
+  scrollNav ? "linear-gradient(180deg, rgba(38,93,212,1) 0%, rgba(103,137,210,1) 63%, rgba(247,247,247,0) 100%);" : "transparent"};
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
   height: 50px;
   margin-top: -80px;
@@ -13,6 +14,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: 1s cubic-bezier(0.65, 0, 0.16, 1);
 
   @media screen and (max-width: 960px) {
     transition: 0.6s cubic-bezier(0.65, 0, 0.16, 1);
@@ -82,7 +84,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid #fff;
   }
 `;
 
