@@ -4,7 +4,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) =>
-  scrollNav ? "linear-gradient(180deg, rgba(38,93,212,1) 0%, rgba(103,137,210,1) 63%, rgba(247,247,247,0) 100%);" : "transparent"};
+    scrollNav ? "rgba(103,137,210,1)" : "transparent"};
   filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.2));
   height: 50px;
   margin-top: -80px;
