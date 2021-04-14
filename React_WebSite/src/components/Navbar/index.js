@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { TiEquals } from 'react-icons/ti';
-import { IconContext } from 'react-icons/lib';
-import { animateScroll as scroll } from 'react-scroll';
+import React, { useState, useEffect } from "react";
+import { TiEquals } from "react-icons/ti";
+import { IconContext } from "react-icons/lib";
+import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
   NavbarContainer,
@@ -12,7 +12,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-} from './NavbarElements';
+} from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -26,7 +26,7 @@ const Navbar = ({ toggle }) => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', changeNav);
+    window.addEventListener("scroll", changeNav);
   }, []);
 
   const toggleHome = () => {
@@ -35,7 +35,7 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: 'magenta' }}>
+      <IconContext.Provider value={{ color: "magenta" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
