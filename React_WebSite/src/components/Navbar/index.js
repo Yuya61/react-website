@@ -38,7 +38,7 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: "magenta" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}>
+            <NavLogo to="/" onClick={toggleHome} scrollNav={scrollNav}>
               Y
             </NavLogo>
             <MobileIcon onClick={toggle}>
@@ -54,6 +54,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-40}
                   activeClass="active"
+                  scrollNav={scrollNav}
                 >
                   About
                 </NavLinks>
@@ -67,6 +68,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-40}
                   activeClass="active"
+                  scrollNav={scrollNav}
                 >
                   Discover
                 </NavLinks>
@@ -80,6 +82,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-40}
                   activeClass="active"
+                  scrollNav={scrollNav}
                 >
                   Services
                 </NavLinks>
@@ -93,6 +96,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-40}
                   activeClass="active"
+                  scrollNav={scrollNav}
                 >
                   Sign Up
                 </NavLinks>
